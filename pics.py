@@ -27,6 +27,7 @@ size = (1200, 1200)
 
 
 def process_image(img_name):
+    print("started")
     img = Image.open(img_name)
 
     img = img.filter(ImageFilter.GaussianBlur(15))
